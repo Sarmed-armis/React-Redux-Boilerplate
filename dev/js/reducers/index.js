@@ -4,9 +4,11 @@
  */
 import {combineReducers} from "redux";
 import  ReducerUser from "./reduscer.users";
+import ActiveUserReducer from './reducer-active-user';
 
 const allReducers=combineReducers({
 
-    users:ReducerUser
+    users:ReducerUser,
+    ActiveUserReducer:ActiveUserReducer
 });
 export default allReducers;

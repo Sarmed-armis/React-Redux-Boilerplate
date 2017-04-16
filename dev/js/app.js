@@ -3,6 +3,7 @@
  */
 import React from 'react';
 import UserList from './container/UserList';
+import UserDetails from './container/user-details';
 
 
 const App = () => (
@@ -10,7 +11,7 @@ const App = () => (
         <h2>User List</h2>
         <UserList />
         <hr />
-
+        <UserDetails />
     </div>
 );
 
