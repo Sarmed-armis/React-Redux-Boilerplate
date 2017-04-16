@@ -1,15 +1,12 @@
-import {combineReducers} from 'redux';
-import UserReducer from './reducer-users';
-import ActiveUserReducer from './reducer-active-user';
+/**
+ * Created by lenovo on 4/15/2017.
+ * this is for combine all data to big object
+ */
+import {combineReducers} from "redux";
+import  ReducerUser from "./reduscer.users";
 
-/*
- * We combine all reducers into a single object before updated data is dispatched (sent) to store
- * Your entire applications state (store) is just whatever gets returned from all your reducers
- * */
+const allReducers=combineReducers({
 
-const allReducers = combineReducers({
-    users: UserReducer,
-    activeUser: ActiveUserReducer
+    users:ReducerUser
 });
-
-export default allReducers
+export default allReducers;
